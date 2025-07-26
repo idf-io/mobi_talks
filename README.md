@@ -21,6 +21,8 @@ Hopefully, this template can make this part of the MoBi master's programme a bit
 
 
 ## Resources to find talks
+> Last update 2023-11-12
+
 ### In-situ Heidelberg
 
 | Title + Link                                                                                                                                                                                                                                               | Location            | Field   | Type           | Event frequency |
