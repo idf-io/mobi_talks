@@ -2,25 +2,42 @@
 \pagestyle{empty}
 \newcommand{\pic}[1]{\begin{minipage}{2.5cm}\vspace{6px}\includegraphics[width=2.45cm]{rattenschwanz/#1}\label{#1}\end{minipage}}
 \begin{landscape}
-\begin{center}
-\begin{longtable}{l|c|p{4.5cm}|p{2.5cm}|p{3.5cm}|p{3.5cm}|p{2.5cm}}
-\caption{Table of visited talks, adapted from the ``laufzettel''.} \label{tab:long} \\
+\begingroup % localize the following settings
+\setlength{\LTleft}{0pt minus 1000pt}
+\setlength{\LTright}{0pt minus 1000pt}
+\begin{small}
+% \begin{adjustwidth}{-1in}{-1.2in}% adjust the R and L margins
+\begin{longtable}{|c|c|p{4.5cm}|p{2cm}|p{2.3cm}|p{3.5cm}|p{5cm}|p{1.2cm}|p{0.5cm}|p{1.2cm}|}
+\caption{Table of \textbf{\underline{online visited talks}{}}, adapted from the ``Laufzettel''.}
+\label{tab:long} \\
 
-\hline \multicolumn{1}{c|}{\textbf{Lfd. Nr}} & \multicolumn{1}{c|}{\textbf{Date}} & \multicolumn{1}{c|}{\textbf{Title}} & \multicolumn{1}{c|}{\textbf{speaker}}  & \multicolumn{1}{c|}{\textbf{place}} & \multicolumn{1}{c|}{\textbf{event name}} & \multicolumn{1}{c}{\textbf{Image}}\\ \hline 
+\hline
+\textbf{Lfd.} & \multicolumn{1}{c|}{\textbf{Date}} & \multicolumn{1}{c|}{\textbf{Title of presentation}} & \multicolumn{1}{c|}{\textbf{Speaker}}  & \textbf{Place} & \multicolumn{1}{c|}{\textbf{Event name}} & \multicolumn{1}{c|}{\textbf{URL}} & \multicolumn{3}{c|}{\textbf{Fachbereich}}\\
+\textbf{Nr.} & & & & \textbf{(e.g. DKFZ)} & & & \multicolumn{1}{c|}{\textbf{Wifo}} & \multicolumn{1}{c|}{\textbf{Bioinfo}} & \multicolumn{1}{c|}{\textbf{BPC}}\\ \hline
 \endfirsthead
 
-\multicolumn{3}{c}%
+\multicolumn{10}{c}%
 {{\bfseries \tablename\ \thetable{} -- continued from previous page}} \\
-\hline \multicolumn{1}{c|}{\textbf{Lfd. Nr}} & \multicolumn{1}{c|}{\textbf{Date}} & \multicolumn{1}{c|}{\textbf{Title}} & \multicolumn{1}{c|}{\textbf{speaker}}  & \multicolumn{1}{c|}{\textbf{place}} & \multicolumn{1}{c|}{\textbf{event name}} & \multicolumn{1}{c}{\textbf{Image}}\\ \hline 
+\hline
+
+\textbf{Lfd.} & \multicolumn{1}{c|}{\textbf{Date}} & \multicolumn{1}{c|}{\textbf{Title of presentation}} & \multicolumn{1}{c|}{\textbf{Speaker}}  & \textbf{Place} & \multicolumn{1}{c|}{\textbf{Event name}} & \multicolumn{1}{c|}{\textbf{URL}} & \multicolumn{3}{c|}{\textbf{Fachbereich}}\\
+\textbf{Nr.} & & & & \textbf{(e.g. DKFZ)} & & & \multicolumn{1}{c|}{\textbf{Wifo}} & \multicolumn{1}{c|}{\textbf{Bioinfo}} & \multicolumn{1}{c|}{\textbf{BPC}}\\ \hline
 \endhead
 
-\hline \multicolumn{7}{r}{{Continued on next page}} \\ \hline
+\hline
+
+\multicolumn{10}{r}{{Continued on next page}} \\ \hline
 \endfoot
 
-\hline \hline
+\hline
+\hline
+
 \endlastfoot
 % nr    date        title       speaker     where       seminar         pic
-15    &   2021/05/05    &   Molecular identity and properties of the acid-activated chloride channel    &   Sandy Blin    &   University of Copenhagen    &   Ion Channel Symposium    &   \pic{example}   \\\hline
+1    &    01/10/1990    &    Title of cool presentation    &    Dr. Jane Doe    &    Online    &    Progress in Cancer Research - KFZD    &    \url{https://us02web.zoom.us/j/asdflkkasddflkasjdflkj} & X & & \\ \hline
+
 \end{longtable}
-\end{center}
+\end{small}
+\endgroup
+% \end{adjustwidth}
 \end{landscape}

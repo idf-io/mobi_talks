@@ -5,12 +5,13 @@
       12pt,oneside,a4paper]{book}
 
 \usepackage{setup}
+% \usepackage{setspace} % Reduces row padding
 
-\newcommand{\myname}{Mobi Musterperson}
+\newcommand{\myname}{Jane Doe}
 \newcommand{\mynumber}{1234567}
 \newcommand{\myhome}{Heidelberg}
 \newcommand{\mymajor}{Molekulare Biotechnologie, M.Sc.}
-\newcommand{\mydate}{2020/01/01}
+\newcommand{\mydate}{01/01/1990}
 
 \begin{document}
 
@@ -19,12 +20,26 @@
 
 \tableofcontents
 
-\include{talks/bpc_1}
-\include{talks/wifo_1}
-\include{talks/info_1}
+%%% Information on spared summaries
+
+\vspace{1cm}
+\noindent
+\textit{6 Vorträge erlassen: GRUND}
+%%%
+
+% Talks
+% Complete manually
+% Sort manually (e.g. in chronological order)
+\include{talks/wifo_SurnameX}
+\include{talks/bpc_SurnameY}
+\include{talks/info_SurnameZ}
 
 % pdf-file containing the Laufzettel an screenshots for online talks
-\includepdf[noautoscale, landscape]{rattenschwanz/rattenschwanz}
-\include{rattenschwanz/laufzettel}
+\includepdf[noautoscale, landscape, pages=-]{rattenschwanz/laufzettel} % in-presence laufzettel scan
+\include{rattenschwanz/laufzettel} % tex-formatted table for online talks
+\includepdf[noautoscale, landscape, pages=-]{rattenschwanz/screenshots} % pdf with online talk screenshots
+
+% Include other PDFs such as proof that you held a seminar
+\includepdf[noautoscale, landscape, pages=-]{rattenschwanz/attendance-list_1990-10-01}
 
 \end{document}
